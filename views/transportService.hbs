@@ -1,0 +1,80 @@
+{{>navbar}}
+
+    <h1 style="text-align: center;">Transportation Services</h1>
+    <img src="/images//transportMain-01.jpg" class="img-fluid" alt=""><br>
+    <p></p><br>
+    <p style="text-align: center;">Available Services</p><br>
+
+    <form action="/transportService" method="POST" id="serviceForm" novalidate>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="/images/transportService1.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> Cab Booking </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> ₹999 </h6>
+                        <p class="card-text"> We Provide Transportation throughout the city. Use taxi service now and get to Your Destination Quickly with Our Taxi Service. </p>
+                        <div class="d-grid">
+                            <label class="btn btn-primary" id="cabBk">
+                                <input type="checkbox" for="cabBk" name="service[]" value="cabBk"> Add Service
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="/images/transportService2.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> Car Rental </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> ₹2799 </h6>
+                        <p class="card-text"> Enjoy self-driving car rental experience with friends and family. Rent a car for shopping, travel, daily commute, one-way and Airport travel. </p>
+                        <div class="d-grid">
+                            <label class="btn btn-primary" id="carRen">
+                                <input type="checkbox" for="carRen" name="service[]" value="carRen"> Add Service
+                            </label>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="/images/transportService3.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> Tour and Guide Service </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> ₹4800 </h6>
+                        <p class="card-text"> Guides are a mediator between tourists and destination. Experts taking tourists to the exclusive sights, which are beyond the normal reach. </p>
+                        <div class="d-grid">
+                            <label class="btn btn-primary" id="tourG">
+                                <input type="checkbox" for="tourG" name="service[]" value="tourG"> Add Service
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="/images/transportService4.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> Events Booking and Transportation </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> ₹1150 </h6>
+                        <p class="card-text"> Asisting you in your event reservations and manging your transportation throughout the event. </p>
+                        <div class="d-grid">
+                            <label class="btn btn-primary" id="eventsTra">
+                                <input type="checkbox" for="eventsTra" name="service[]" value="eventsTra"> Add Service
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="d-grid gap-2 col-3 mx-auto">
+        <input type="submit" id="transportSubmit" class="btn btn-primary" value="Submit">
+    </div>
+    </form>
+    <br>
+    <script src="/javascripts/validation.js"></script>
+{{>footer}}

@@ -1,0 +1,84 @@
+{{>navbar}}
+
+
+<h1 style="text-align: center;"> HAIR DRESSER</h1>
+    <img src="images/salonMain01.jpg" class="img-fluid" alt=""><br>
+    <p></p><br>
+   <p style="text-align: center;">Available Services</p><br>
+
+    <form action="/beautySalon" method="POST" id="serviceForm" novalidate>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="images/salon1.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> HAIRCUT</h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> ₹1299 </h6>
+                        <p class="card-text">A salon where people go to have their hair cut and cut them into a particular style they required.  </p>
+                        <div class="d-grid">
+                            <label class="btn btn-primary" id="haircut">
+                                <input type="checkbox" for="haircut" name="service[]" value="haircut"> Add Service
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="images/salon2.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> MAKEUP </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> ₹1999 </h6>
+                        <p class="card-text">Cosmetics such as lipstick or powder applied to the face, used to enhance or alter the appearance. </p>
+                        <div class="d-grid">
+                            <label class="btn btn-primary" id="makeup">
+                                <input type="checkbox" for="makeup" name="service[]" value="makeup"> Add Service
+                            </label>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="images/salon3.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> MANI_PEDI </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> ₹1599 </h6>
+                        <p class="card-text"> A manicure is the curation and care of a client's hands and a pedicure refers to the curation and care of a client's feet. </p>
+                        <div class="d-grid">
+                            <label class="btn btn-primary" id="pedi">
+                                <input type="checkbox" for="pedi" name="service[]" value="pedi"> Add Service
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="images/salon4.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> FACIAL </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> ₹1599 </h6>
+                        <p class="card-text">A treatment intended to improve the appearance of the skin of the face, as by massage, the application of creams.</p>
+                        <div class="d-grid">
+                            <label class="btn btn-primary" id="facial">
+                                <input type="checkbox" for="facial" name="service[]" value="facial"> Add Service
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="d-grid gap-2 col-3 mx-auto">
+        <input type="submit" id="transportSubmit" class="btn btn-primary" value="Submit">
+    </div>
+    </form>
+      <br>    
+    <script src="/javascripts/validation.js"></script>
+
+
+{{>footer}}

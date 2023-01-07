@@ -1,0 +1,130 @@
+{{>navbar}}
+
+    <h1 style="text-align: center;">LAUNDRY SERVICES</h1>
+    <img src="/images/laundryMain01.jpg" class="img-fluid" alt="" ><br>
+    <br>
+    <h2 style="text-align: center;">CLOTHING SERVICES</h2><br>
+
+    <form action="/laundryService" method="POST" id="serviceForm" novalidate>
+    
+     <!-- first card -->
+        <div class="container">
+       
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="/images/laundry1.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> SHIRTS </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> ₹ 130 </h6>
+                        <p class="card-text">Shirt Laundry includes washing,the fabric and the structure of the shirt will be carefully examined to determine the best cleaning method. </p>
+                        <div class="d-grid">
+                            <label class="btn btn-primary" id="shirts">
+                                <input type="checkbox" for="shirts" name="service[]" value="shirts"> Add Service
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- second card -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="/images/laundry2.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> PANTS </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> ₹ 140 </h6>
+                        <p class="card-text"> Washing pants we use laundry detergent designed for dark clothing to prevent fading. Avoid bleach, which can permanently damage the indigo dye. </p>
+                        <div class="d-grid">
+                            <label class="btn btn-primary" id="pants">
+                                <input type="checkbox" for="pants" name="service[]" value="pants"> Add Service
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- third card -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="/images/laundry3.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> SHERWANI </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> ₹ 350 </h6>
+                        <p class="card-text"> Wedding sherwani we use laundry detergent designed for the surfactants in detergents improve water's ability  spread over surfaces, and seep into dirty clothes fibers.</p>
+                        <div class="d-grid">
+                            <label class="btn btn-primary" id="sherwani">
+                                <input type="checkbox" for="sherwani" name="service[]" value="sherwani"> Add Service
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 style="text-align: center;"> DRY CLEANING SERVICES</h2><br>
+
+            <!-- fourth card -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="/images/laundry4.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> STAIN & SPOT REMOVAL </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> ₹ 150 </h6>
+                        <p class="card-text">Stain removal is the process of removing a mark or spot left by one substance on a specific surface like a fabric. A solvent or detergent is generally used in this.</p>
+                        <div class="d-grid">
+                            <label class="btn btn-primary" id="stain">
+                                <input type="checkbox" for="stain" name="service[]" value="stain"> Add Service
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- fifth card -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="/images/laundry5.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> WASH & FOLD  </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> ₹199 </h6>
+                        <p class="card-text"> This wash and fold Sometimes called Fluff and Fold, Wash and Fold refers to a laundry company's service of washing, drying, and then folding clothes. </p>
+                        <div class="d-grid">
+                            <label class="btn btn-primary" id="wFold">
+                                <input type="checkbox" for="wFold" name="service[]" value="wFold"> Add Service
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- sixth card -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="/images/laundry6.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> WASH & IRON </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> ₹199 </h6>
+                        <p class="card-text">In wash & iron service, clothes are cleaned in the machine using our custom bio-enzyme antibacterial detergents, gently tumble-dried and steam pressed. </p>
+                        <div class="d-grid">
+                            <label class="btn btn-primary" id="wIron">
+                                <input type="checkbox" for="wIron" name="service[]" value="wIron"> Add Service
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="d-grid gap-2 col-3 mx-auto">
+        <input type="submit" id="laundrySubmit" class="btn btn-primary" value="Submit">
+    </div>
+</form>
+<br>
+<script src="/javascripts/validation.js"></script>
+{{>footer}}

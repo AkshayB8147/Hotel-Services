@@ -1,0 +1,155 @@
+{{>navbar}}
+    <h1 style="text-align: center;"> SENSES SPA </h1>
+    <img src="/images/spaMain01.jpg" class="img-fluid" alt=""><br>
+    <p></p><br>
+    <p style="text-align: center;">Our spa therapist will provide a personalized spa ritual for ultimate relaxation and balancing experience.</p> 
+    <p style="text-align: center;">This is a place of profound harmony and a place to renew one's strength and sense of self.</p><br>
+
+    <form action="/sensesSpa" method="POST" id="serviceForm" novalidate>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="/images/spa1.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> AROMA MASSAGE </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> ₹2300 </h6>
+                        <p class="card-text"> A gentle massage designed to review your body, using a blend of luxurious oil with soothing strokes for the ultimate massage. </p>
+                        <div class="d-grid">
+                            <label class="btn btn-primary" id="aroma">
+                                <input type="checkbox" for="aroma" name="service[]" value="aroma"> Add Service
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="/images/spa2.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> TRADITIONAL AYURVEDA </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> ₹2600 </h6>
+                        <p class="card-text"> A healing therapy that involves a series of gentle healing strokes and working with pressure points. </p>
+                        <div class="d-grid">
+                            <label class="btn btn-primary" id="ayurveda">
+                                <input type="checkbox" for="ayurveda" name="service[]" value="ayurveda"> Add Service
+                            </label>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="/images/spa3.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> BALINESE BLISS </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> ₹2400 </h6>
+                        <p class="card-text"> A truly calming experience that guides your mind and body into blissful state. 
+                            This massage combines acupressure and relaxing strokes. </p>
+                        <div class="d-grid">
+                            <label class="btn btn-primary" id="balinese">
+                                <input type="checkbox" for="balinese" name="service[]" value="balinese"> Add Service
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="/images/spa4.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> SHIATSU </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> ₹2300 </h6>
+                        <p class="card-text"> Shiatsu  therapy relies on the use the fingers, thumbs palm to apply pressure to various areas of the body surface to help heal common ailments. </p>
+                        <div class="d-grid">
+                            <label class="btn btn-primary" id="shiatsu">
+                                <input type="checkbox" for="shiatsu" name="service[]" value="shiatsu"> Add Service
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="/images/spa5.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> SWEDISH SENSATION </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> ₹2000 </h6>
+                        <p class="card-text"> An energizing treatment designed to relieve physical tension from the body in a gentle way, using gentle strokes. </p>
+                        <div class="d-grid">
+                            <label class="btn btn-primary" id="swedish">
+                                <input type="checkbox" for="swedish" name="service[]" value="swedish"> Add Service
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="/images/spa6.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> DEEP TISSUE </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> ₹2300 </h6>
+                        <p class="card-text"> Using harmonious combination of Balinese and Swedish along with healing strokes and acupressure to ensure a deep sense of balance and calm. </p>
+                        <div class="d-grid">
+                            <label class="btn btn-primary" id="deepTissue">
+                                <input type="checkbox" for="deepTissue" name="service[]" value="deepTissue"> Add Service
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="/images/spa7.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> ROYAL HEAD MASSAGE </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> ₹1500 </h6>
+                        <p class="card-text"> Combines the best of ancient and modern techniques to leave you in a state of complete bliss. </p><br>
+                        <div class="d-grid">
+                            <label class="btn btn-primary" id="royalHead">
+                                <input type="checkbox" for="royalHead" name="service[]" value="royalHead"> Add Service
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="/images/spa8.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> ROMANTIC INDULGENCE </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> ₹2300 </h6>
+                        <p class="card-text"> Share this moment in time with a loved one. <br> <br></p><br>
+                        <div class="d-grid">
+                            <label class="btn btn-primary" id="romanticInd">
+                                <input type="checkbox" for="romanticInd" name="service[]" value="romanticInd"> Add Service
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <br>
+    <div class="d-grid gap-2 col-3 mx-auto">
+        <input type="submit" id="transportSubmit" class="btn btn-primary" value="Submit">
+    </div>
+    </form>
+        
+    
+    <article class="rules">
+        <h3>HOW TO SPA WITH US</h3>
+        <ul>
+            <li><b>Etiquette : </b><p>We respectfully request that all visitors keep noise to a minimum. Cellular phones and electronic devices are discouraged.</p></li>
+            <li><b>Attire :</b> <p>Please arrive at the Spa wearing comfortable, light clothing or a bathrobe. Disposable undergarments are available on request.</p></li>
+            <li><b>Smoking And Alcohol :</b><p>Smoking and the consumption of alcohol within the Spa are prohibited. It is also advisable to avoid the consumption of alcohol or heavy meals prior to, or after any Spa treatment.</p></li>
+            <li><b>Valuables :</b> <p>We recommend that no jewellery be worn at the Spa. The management and staff accept no responsibility for the loss of money or valuables of any kind brought into the Spa premises.</p></li>
+            <li><b>Special Consideration :</b><p>Guests who have high blood pressure, heart conditions, are pregnant or have any other medical complications are advised to consult their doctors before signing up for any spa services. Kindly inform your spa therapist of any existing medical conditions.</p></Li>
+        </ul>
+    </article>
+    <br>
+    <script src="/javascripts/validation.js"></script>
+{{>footer}}

@@ -1,0 +1,22 @@
+{{>navbar}}
+{{#if message}}
+<div class="alert alert-danger text-center">{{message}}</div>
+{{/if}}
+{{#if bookingId}}
+<div class="container my-3">
+    <h4 style="text-align: center;"> You are already logged in.. </h4>
+    <div class="col-md-12 text-center">
+        <a href="/logout"><button type="button" class="btn btn-primary"> Log out </button></a>
+    </div>
+</div>
+{{else}}
+<div class="wrapper">
+    <form action="/login" class="form-signin" method="POST">
+        <h2 class="form-signin-heading text-center"> Login </h2>
+        <input type="email" name="email" id="email" placeholder="Email" class="form-control" required >
+        <input type="password" name="password" id="password" placeholder="Password" class="form-control" required >
+        <button class="btn btn-lg btn-primary btn-block">Sign in</button>
+    </form>
+</div>
+{{/if}}
+{{>footer}}
